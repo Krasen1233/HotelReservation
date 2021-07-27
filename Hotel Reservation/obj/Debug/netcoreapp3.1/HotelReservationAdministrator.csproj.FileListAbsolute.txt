@@ -1,0 +1,7 @@
+C:\Users\User\source\repos\HotelReservation\HotelReservation\obj\Debug\netcoreapp3.1\HotelReservationAdministrator.csprojAssemblyReference.cache
+C:\Users\User\source\repos\HotelReservation\HotelReservation\obj\Debug\netcoreapp3.1\HotelReservationAdministrator.AssemblyInfoInputs.cache
+C:\Users\User\source\repos\HotelReservation\HotelReservation\obj\Debug\netcoreapp3.1\HotelReservationAdministrator.AssemblyInfo.cs
+C:\Users\User\source\repos\HotelReservation\HotelReservation\obj\Debug\netcoreapp3.1\HotelReservationAdministrator.csproj.CoreCompileInputs.cache
+C:\Users\User\source\repos\HotelReservation\HotelReservation\obj\Debug\netcoreapp3.1\HotelReservationAdministrator.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\User\source\repos\HotelReservation\HotelReservation\obj\Debug\netcoreapp3.1\HotelReservationAdministrator.RazorAssemblyInfo.cache
+C:\Users\User\source\repos\HotelReservation\HotelReservation\obj\Debug\netcoreapp3.1\HotelReservationAdministrator.RazorAssemblyInfo.cs
