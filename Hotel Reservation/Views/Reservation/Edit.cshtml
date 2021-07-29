@@ -1,0 +1,30 @@
+﻿@model EditReservationViewModel
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<div class="text-center">
+    <h1>Edit</h1>
+</div>
+
+<form asp-controller="Reservation" asp-action="Edit" method="post">
+    <label>People Count</label>
+    <input class="form-control" type="number" name="people count" value="@Model.PeopleCount" />
+    <label>Start Date</label>
+    <input class="form-control" type="date" name="start date" value="@Model.StartDate" />
+    <label>End Date</label>
+    <input class="form-control" type="date" name="end date" value="@Model.EndDate" />
+    <label>Room Type</label>
+    <input class="form-control" type="text" name="room type" value="@Model.RoomType" />
+    <label>Rooms:</label>
+    <select id="rooms" name="rooms">
+        <option value="@Model.Room">Please select one:</option>
+    </select>
+    <label>Price:</label>
+    <input class="form-control" value="Price" id="price" />
+
+    <div class="text-right mt-2">
+        <button class="btn btn-success" type="submit" asp-route-id="@Model.Id">Edit</button>
+        <a class="btn btn-secondary" asp-action="Index">Cancel</a>
+    </div>
+</form>

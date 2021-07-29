@@ -1,0 +1,28 @@
+﻿@model CreateReservationViewModel
+
+@{
+    ViewData["Title"] = "Create";
+}
+<div class="text-center">
+     <h1>Create Reservation</h1>
+ </div>
+
+<form asp-controller="Reservation" asp-action="Create" method="post">
+    <label>People Count</label>
+    <input class="form-control" type="number" name="people count" />
+    <label>Start Date</label>
+    <input class="form-control" type="date" name="start date" />
+    <label>End Date</label>
+    <input class="form-control" type="date" name="end date" />
+    <label>Room Type</label>
+    <input class="form-control" type="text" name="room type" />
+    <label>Rooms:</label>
+    <input class="form-control" type="text" name="rooms" />
+    <label>Price:</label>
+    <input class="form-control" value="0.0" id="price" />
+
+    <div class="text-right mt-3">
+        <button class="btn btn-primary" type="submit">Create</button>
+        <a class="btn btn-secondary" asp-action="Reservation">Cancel</a>
+    </div>
+</form>

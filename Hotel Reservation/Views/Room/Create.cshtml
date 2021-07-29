@@ -1,0 +1,24 @@
+﻿@model HotelReservation.Models.CreateRoomViewModel
+@{
+    ViewData["Title"] = "Create";
+}
+
+<div class="text-center">
+    <h1>Create Room</h1>
+</div>
+
+<form asp-controller="Room" asp-action="Create" method="post">
+    <label>Capacity</label>
+    <input class="form-control" type="text" name="capacity" />
+    <label>Room Type</label>
+    <input class="form-control" type="text" name="roomtype" />
+    <label>Price On Bed</label>
+    <input class="form-control" type="text" name="priceonbed" />
+    <label>Number</label>
+    <input class="form-control" type="text" name="number" />
+
+    <div class="text-right mt-3">
+        <button class="btn btn-primary" type="submit">Create</button>
+        <a class="btn btn-secondary" asp-action="Room">Cancel</a> 
+    </div>
+</form>

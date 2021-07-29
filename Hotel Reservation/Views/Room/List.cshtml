@@ -1,0 +1,23 @@
+﻿@model RoomViewModel 
+@{
+    ViewData["Title"] = "Details";
+}
+
+<div class="text-center">
+    <h1>Details</h1>
+</div>
+
+<div>
+    <p><span class="font-weight-bold">Id:</span>@Model.Id</p>
+    <p><span class="font-weight-bold">Capacity:</span>@Model.Capacity</p>
+    <p><span class="font-weight-bold">Room Number:</span>@Model.Number</p>
+    <p><span class="font-weight-bold">Price On Bed:</span>@Model.PriceOnBed</p>
+    <p><span class="font-weight-bold">Type:</span>@Model.Type</p>
+    <p><span class="font-weight-bold">Is Free:</span>@Model.IsFree</p>
+
+    <div class="text-right mt-3">
+        <a class="btn btn-success" asp-action="Edit" asp-route-id="@Model.Id">Edit</a>
+        <a class="btn btn-danger" asp-action="Delete" asp-route-id="@Model.Id">Delete</a>
+        <a class="btn btn-secondary" asp-action="Index">Cancel</a>
+    </div>
+</div>

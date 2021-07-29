@@ -1,0 +1,26 @@
+﻿@model ClientViewModel
+
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<div class="text-center">
+    <h1>Edit Client</h1>
+</div>
+
+<form asp-controller="Client" asp-action="Edit" method="post">
+    <label>First Name</label>
+    <input class="form-control" type="text" name="first name" value="@Model.FirstName" />
+    <label>Third Name</label>
+    <input class="form-control" type="text" name="third name" value="@Model.ThirdName" />
+    <label>Telephone</label>
+    <input class="form-control" type="tel" name="telephone" value="@Model.Telephone" />
+    <label>Email</label>
+    <input class="form-control" type="email" name="email" value="@Model.Email" />
+    <label>IsAdult</label>
+    <input class="form-control" type="text" name="is adult" value="@Model.IsAdult" />
+    <div class="text-right mt-2">
+        <button class="btn btn-success" type="submit" asp-route-id="@Model.Id">Edit</button>
+        <a class="btn btn-secondary" asp-action="Index">Cancel</a>
+    </div>
+ </form>
